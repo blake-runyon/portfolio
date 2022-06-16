@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Menubar } from 'primereact/menubar'
 import './App.css';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";
+import MenuLinks  from './models/MenuLinks'
+import Home from './components/Home';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
 
-function App() {
+
+const App = () => {
+  const items = MenuLinks;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="wrapper">
+      <Menubar 
+        model={items}
+      />
     </div>
-  );
+    
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+    </Routes>
+  </BrowserRouter>
+    
+    </>
+  )
 }
 
 export default App;
