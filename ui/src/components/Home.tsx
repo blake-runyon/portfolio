@@ -1,6 +1,16 @@
+import memoji from '../assets/memoji copy.png'
+
 const Home = () => {
+    function redir(): void {
+        window.location.href = "/about";
+    }    
+
     return (
-        <h1>Home works</h1>
+        <>
+        <div id='home' onClick={redir}>
+            <img src={memoji} alt="Me Moji" className='memoji'/>
+        </div>
+        </>
     )
 }
 
