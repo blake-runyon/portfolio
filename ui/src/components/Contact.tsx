@@ -12,9 +12,6 @@ const Contact = () => {
             <hr />
             <article>
                 <div className="grid">
-                    {/* <div className="col-12 lg:col-4">
-                        <img src={memoji} alt="Memoji" />
-                    </div> */}
                     <div className="col-12 text-center align-self-center">
                        <p><i className="pi pi-envelope"></i> me@blakerunyon.io</p>
                        <p><i className="pi pi-phone"></i> 304-785-0570</p>

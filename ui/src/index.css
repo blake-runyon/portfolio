@@ -28,6 +28,10 @@ body {
   border-radius: 100%;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .name { 
   font-family: 'Oswald';
   font-size: 250%;
