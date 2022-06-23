@@ -32,8 +32,8 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='/about' element={<About />}></Route>
-      <Route path='/skills' element={<Skills />}></Route>
-      <Route path='/academics' element={<Academics />}></Route>
+      <Route path='/portfolio' element={<Skills />}></Route>
+      {/* <Route path='/academics' element={<Academics />}></Route> */}
       <Route path='/contact' element={<Contact />}></Route>
     </Routes>
   </BrowserRouter>
