@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Code+Pro&display=swap');
+
+.container {
+    width: 80%;
+    max-width: 80%;
+    background-color: white;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.container .headline {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container article {
+    margin-top: 15px;
+}
+
+.container article img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15%;
+    box-shadow: 0 0 3px black;
+}
+
+.buttons Button {
+    font-family: 'Source Code Pro';
+    background-color: rgb(42, 232, 0);
+    color: black;
+}
+
+.buttons Button:hover {
+    background-color: rgb(42, 232, 0);
+}
+
+.container article p {
+    font-size: 100%;
+}
+
+.container h1 {
+    font-family: 'Oswald';
+    font-size: 300%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(42, 232, 0);
+}
+
+.container p {
+    font-family: 'Source Code Pro';
+    font-size: 125%;
+}
