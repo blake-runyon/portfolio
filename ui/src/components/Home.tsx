@@ -1,7 +1,7 @@
 import memoji from '../assets/memoji copy.png'
 import 'animate.css'
 import '../index.css'
-import { SendTo } from '../helperFunctions'
+import { SendTo, Redirect } from '../helperFunctions'
 import { Tooltip } from 'primereact/tooltip'
 
 const Home = () => {
@@ -19,10 +19,10 @@ const Home = () => {
                 <div className="col-4"></div>
                 <div className="col-4">
                     <div className="social-links">
-                        <i className="pi pi-linkedin"></i>
-                        <i className="pi pi-github"></i>
-                        <i className="pi pi-phone"></i>
-                        <i className="pi pi-envelope"></i>
+                        <i className="pi pi-phone pointer" onClick={() => Redirect("tel:304-785-0570")}></i>
+                        <i className="pi pi-envelope pointer" onClick={() => Redirect("mailto:me@blakerunyon.io")}></i>
+                        <i className="pi pi-github pointer" onClick={() => Redirect("https://github.com/blake-runyon")}></i>
+                        <i className="pi pi-linkedin pointer" onClick={() => Redirect("https://www.linkedin.com/in/blake-runyon-6872611ab/")}></i>
                     </div>
                 </div>
                 <div className="col-4"></div>

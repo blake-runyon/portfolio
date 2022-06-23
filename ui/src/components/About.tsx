@@ -1,6 +1,6 @@
 import '../content.css'
 import { Button } from 'primereact/button'
-import { SendTo } from '../helperFunctions'
+import { Redirect, SendTo } from '../helperFunctions'
 
 const About = () => {
     return (
@@ -34,7 +34,7 @@ const About = () => {
                         <div className="buttons mt-3">
                             <Button label="Portfolio" icon="pi pi-code" className="mr-2" onClick={() => SendTo("portfolio")} />
 
-                            <Button label="Academics" icon="pi pi-book" className="ml-2" onClick={() => SendTo("academics")} />
+                            <Button label="Academics" icon="pi pi-book" className="ml-2" onClick={() => Redirect("https://drive.google.com/file/d/1MSupHETqkFAM2V4jhDvhv1bmI3Ch1d-l/view?usp=sharing")} />
                         </div>
                         
                     </div>
