@@ -1,7 +1,3 @@
-import { Button } from "primereact/button"
-import { SendTo } from "../helperFunctions"
-import memoji from '../assets/memoji copy.png'
-
 const Contact = () => {
     return (
         <div className="container">
